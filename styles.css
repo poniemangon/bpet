@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+* {margin: 0; padding: 0; transition: 0.3s}
+
+:root {
+  --primary: #0F3C6C
+}
+
+/* 
+
+{} 
+
+*/
+
+h1 {font-size: 60px; font-family: 'Sofia Sans', sans-serif; font-weight: 700;}
+
+h2 {font-size: 48px; font-family: 'Sofia Sans', sans-serif; font-weight: 700;}
+
+h3 {font-size: 42px; font-family: 'Sofia Sans', sans-serif; font-weight: 700;}
+
+h4 {font-size: 25px; font-family: 'Sofia Sans', sans-serif; font-weight: 300; }
+
+h5 {font-size: 20px; font-family: 'Sofia Sans', sans-serif; font-weight: 300;}
+
+h6, input, textarea  {font-size: 18px; font-family: 'Sofia Sans', sans-serif; font-weight: 600; }
+
+p, a, span, li{font-size: 16px; font-family: 'Sofia Sans', sans-serif; font-weight: 400; text-decoration: none;}
+
+.d-flex {display: flex;}
+
+@media(max-width: 576px){
+  .container {width: 90%; margin: auto;}
+}
+
+/* navbar */ 
+
+.solid {background-color: white; box-shadow: -2px 8px 54px -20px rgb(0, 0, 0);}
+
+section.navbar-section {position: fixed; width: 100vw;}
+
+section.navbar-section .container {padding: 25px 0; justify-content: center; display: flex;}
+
+section.navbar-section .container img {height: 80px;}
+
+@media(max-width: 992px){
+  section.navbar-section .container img {height: 60px;}
+}
+
+/* title-section */
+
+section.title-section  {background-image: url(./images/bg-pets.jpg); background-repeat: no-repeat; background-size: cover; height: 60vh; display: flex; align-items: center; max-height: 600px; background-position-x: center;}
+
+section.title-section .container {color: white; justify-content: center; }
+
+/* social media section */
+
+section.social-media-section {background-color: var(--primary);} 
+
+section.social-media-section .container {padding: 50px 0; justify-content: center;} 
+
+section.social-media-section .container .item {flex-direction: column; align-items: center; color: white;} 
+
+section.social-media-section .container .item:hover i {color: black;} 
+
+section.social-media-section .container .item i {color: white; font-size: 45px; margin-bottom: 5px;}
+
+
+
+
+/* contact-form-section */
+section.contact-form-section h2 {color: var(--primary);}
+
+section.contact-form-section .container {padding: 100px 0;}
+
+section.contact-form-section form {gap: 30px; display: flex; flex-direction: column;}
+
+section.contact-form-section form input,  section.contact-form-section form textarea{width: 100%; border: none; border-bottom: 1px solid grey;}
+
+section.contact-form-section form input:focus,  section.contact-form-section form textarea:focus {outline: none;}
+
+section.contact-form-section form .d-flex {gap: 10px;}
+
+section.contact-form-section form button {align-self: start; padding: 8px 20px; border-radius: 20px; border: none; background-color: var(--primary); color: white;}
+
+@media(max-width: 992px){
+
+  section.contact-form-section .container {width: 90%; margin: auto; text-align: center;} 
+
+  section.contact-form-section .container .row {gap: 40px;} 
+
+  section.contact-form-section form * {text-align: center; margin: auto;} 
+
+  section.contact-form-section form .d-flex {flex-direction: column; gap: 30px; width: 100%;} 
+
+
+}
+
+/* footer */
+
+section.footer {background-color: var(--primary);}
+
+section.footer .container {padding: 15px 0;}
+
+section.footer .container p {color: white; font-size: 14px;}
+
+@media(max-width: 992px){
+
+  section.footer .container p {text-align: center;}
+
+
+}
